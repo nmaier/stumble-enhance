@@ -8,6 +8,19 @@ toolbar[iconsize="small"] #stumbleenh-button {
   list-style-image: url(stumbleupon16.png);
 }
 
-#stumbleenh-button[stumbleenh] image {
-	-moz-transform: rotate(45deg) !important;
+/* Tranformations incl. hover */
+#stumbleenh-button image {
+	-moz-transition-property: -moz-transform;
+	-moz-transition-duration: 0.6s;
+}
+#stumbleenh-button:hover image {
+	-moz-transition-property: -moz-transform;
+	-moz-transition-duration: 2s;
+	-moz-transform: rotate(360deg) !important;
+}
+#stumbleenh-button[stumbleenh] image,
+#stumbleenh-button[stumbleenh]:hover image {
+	-moz-transition-property: -moz-transform;
+	-moz-transition-duration: 2s;
+	-moz-transform: rotate(90deg) !important;
 }
