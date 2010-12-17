@@ -1,0 +1,9 @@
+content	stumbleenh	./
+locale  stumbleenh en-US		./en-US/
+skin    stumbleenh classic/1.0 ./
+
+overlay	chrome://browser/content/browser.xul	chrome://stumbleenh/content/overlay.xul
+style chrome://browser/content/browser.xul chrome://stumbleenh/skin/
+style chrome://global/content/customizeToolbar.xul  chrome://stumbleenh/skin/
+override chrome://stumbleenh/skin/ chrome://stumbleenh/skin/stumbleenh-mono.css application={ec8030f7-c20a-464f-9b0e-13a3a9e97384} appversion>=4.0b6 os=winnt
+override chrome://stumbleenh/skin/ chrome://stumbleenh/skin/stumbleenh-mono.css application={ec8030f7-c20a-464f-9b0e-13a3a9e97384} appversion>=4.0b6 os=darwin

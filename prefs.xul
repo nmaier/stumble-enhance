@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin" type="text/css"?>
+<?xml-stylesheet href="chrome://stumbleenh/skin/prefs.css" type="text/css"?>
+
+<!DOCTYPE window [
+	<!ENTITY % prefsDTD SYSTEM "chrome://stumbleenh/locale/prefs.dtd">
+	%prefsDTD;
+]>
+<prefwindow id="stumbleenhPrefs" style="width:30em; height:20em;" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<prefpane label="&general;" id="main">
+		<preferences>
+			<preference id="enabled" name="extensions.stumbleenh.enabled" type="bool" />
+			<preference id="numStumbles" name="extensions.stumbleenh.numstumbles" type="int" />
+		</preferences>
+		<grid>
+			<columns>
+				<column />
+				<column flex="1" />
+			</columns>
+			<rows>
+				<checkbox id="chEnabled" label="&enabled;" preference="enabled" />
+				<row align="center">
+					<label control="tbNumStumbles" value="&numstumbles;" />
+					<textbox id="tbNumStumbles" preference="numStumbles" type="number" max="50" min="1" />
+				</row>
+			</rows>
+		</grid>
+	</prefpane>
+	<prefpane label="&misc;" id="misc">
+		<groupbox>
+			<caption label="&broughttoyouby;" />
+			<label id="by">Nils Maier (tn123)</label>
+		</groupbox>
+	</prefpane>
+</prefwindow>

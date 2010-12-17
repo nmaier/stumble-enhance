@@ -1,0 +1,22 @@
+prefwindow radio[pane] {
+	list-style-image: url(prefs.png);
+}
+
+radio[pane="main"] {
+	-moz-image-region: rect(0px, 32px,  32px, 0px);
+}
+radio[pane="main"]:hover,
+radio[pane="main"][selected="true"] {
+	-moz-image-region: rect(32px, 32px,  64px, 0px);
+}
+radio[pane="misc"] {
+	-moz-image-region: rect(0px, 160px,  32px, 128px);
+}
+radio[pane="misc"]:hover,
+radio[pane="misc"][selected="true"] {
+	-moz-image-region: rect(32px, 160px,  64px, 128px);
+}
+
+caption {
+	font-weight: bold;
+}

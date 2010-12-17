@@ -1,0 +1,13 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#stumbleenh-button {
+  list-style-image: url(stumbleupon24-mono.png);
+}
+
+toolbar[iconsize="small"] #stumbleenh-button {
+  list-style-image: url(stumbleupon16-mono.png);
+}
+
+#stumbleenh-button[stumbleenh] image {
+	-moz-transform: rotate(45deg) !important;
+}
