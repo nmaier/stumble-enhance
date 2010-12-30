@@ -35,6 +35,7 @@ addEventListener('load', function() {
 				sub.removeAttribute('stumbleenh');
 				sue.removeAttribute('stumbleenh');
 				sub.setAttribute('tooltiptext', tt);
+				sue.removeAttribute('tooltiptext');
 				return;
 			}
 			if (!su_stumble_async_context) {
